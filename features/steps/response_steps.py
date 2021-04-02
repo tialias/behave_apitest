@@ -52,7 +52,7 @@ def catch_re_value(context, expression, name):
 
 @Step("校验返回结果等于{expect_value}")
 def assert_value(context, expect_value):
-    value = context.response.text
+    value = context.response.text·
     assert value == expect_value, '断言失败，期望结果为:{},实际结果为{}'.format(expect_value, value)
 
 
